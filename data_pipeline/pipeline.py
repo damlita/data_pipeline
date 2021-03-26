@@ -1,6 +1,4 @@
 # ETL - Pipeline: Extract, Transform, Load
-# Output geht als Input in die Funktion ein in einem Loop
-# hallo
 from typing import Generator
 
 def read_large_dataset(file_name: str) -> Generator:
@@ -26,17 +24,3 @@ def load_data(file_name: str):
     result = dictify(split_generator)
     return result
 
-
-
-"""   
-    for element in d:
-        print(element)
-    print(d)
-    print(next(d))
-    print(next(d))
-    print(next(d))
-    print(next(d))
-    #print(next(split_generator))
-    #print(next(split_generator))
-
-"""
